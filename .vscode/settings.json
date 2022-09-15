@@ -1,0 +1,24 @@
+{
+    "files.exclude": {
+        "**/.venv": true,
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/*.pyc": true,
+        "**/__pycache__": true,
+        "**/.pytest_cache": true
+    },
+    "python.linting.banditArgs": [
+        "-c ${workspaceFolder}/bandit.yaml"
+    ],
+    "python.linting.pylintArgs": [
+        "--disable=R0902,R0903,C0114,C0115,C0116"
+    ],
+    "python.testing.autoTestDiscoverOnSaveEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestPath": "${workspaceFolder}/.venv/bin/pytest"
+}
